@@ -132,6 +132,10 @@ img {
 }
 
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -218,12 +222,14 @@ img {
 
 .details-flex {
   display: flex;
-  margin-left: -30px;
 }
 
 .details-item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.details-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .details-headline {
@@ -242,12 +248,14 @@ img {
 
 .images-flex {
   display: flex;
-  margin-left: -30px;
 }
 
 .images-item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.images-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
@@ -256,18 +264,22 @@ img {
 
 .team-flex {
   display: flex;
-  margin-left: -30px;
 }
 
 .team-item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-container {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .team-name {
-  margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -295,7 +307,7 @@ img {
 }
 
 .page-address {
-  padding-top: 20px;
+  margin-top: 20px;
 
   font-style: normal;
 }
